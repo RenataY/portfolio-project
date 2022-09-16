@@ -1,122 +1,167 @@
-header {
-    /* width: 98%;
-    height: 4rem;
-    background-color: white;
-    position: fixed; */
-    top: 0;
-    color: grey;
-    font-size: 100%;
-    display: flex;
-    justify-content: space-between;
-    text-shadow: 0.5px 0.5px 1px grey ;
+.header {
+  top: 0;
+  color: grey;
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 0.5px 0.5px 1px grey;
+  margin-bottom: 40px;
 }
-header nav {
-    display: flex;
-    align-self: flex-end;
-    justify-content: center;
- }
-
-header a {
-    text-decoration: none;
-    color: inherit;
-    margin: 0 30px;
-   
+.header__nav {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
 }
-.name {
-    margin: 0 20px;
+.header__nav__link {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 30px;
 }
-
-.about {
-    margin:100px 100px;
-    display:flex;
+.header__name {
+  margin: 0 20px;
 }
-.text-about-me {
-    padding: 40px 100px;
-    font-size: 150%;
-}
-.img-about {
-    height: 200px;
-    box-shadow: 10px 10px 5px #ccc;
-}
-.technical-skills {
-    text-align: center;
-}
-.technical-skills-list {
-    display: flex;
-    list-style-type: none;  
-    justify-content: center;
-}
-.technical-skills-list li {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    text-align: center;
-    color: gray;
-}
-.icon {
-    color: lightblue;
-    font-size: 3rem;
-}
-
-.my-projects-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px 20px;
-    
-    
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-}
-
-.project p {
-    color: gray;
-    text-align: center;
-    margin-top: 0;
-    
-    
-}
-
-.code-preview {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.code-preview div{
-    margin: 1rem;
-}
-h2, h3, h5 {
-    text-align: center;    
-}
-h5 {
-    margin-top: 1rem;
-    margin-bottom: 0;
-}
-
-footer {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.connect-details i {
-    color: slategray;
-    font-size: 2rem;
-}
-footer .copyright {
-    color: slategray;
-    font-size: 1rem;
-}
-
-
 
 @media screen and (max-width: 800px) {
-    .my-projects-list {
-        grid-template-columns: 1fr;
-    }
+  .header__name {
+    display: none;
+  }
 }
+.about {
+  margin: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__text {
+  margin: 0 2em;
+  font-size: 3vh;
+}
+.about__img img {
+  height: 200px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about__img {
+    margin-top: 20px;
+  }
+  .about__img img {
+    height: 150px;
+  }
+}
+.technical-skills {
+  text-align: center;
+}
+.technical-skills__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.technical-skills__list__icon {
+  color: lightblue;
+  font-size: 3rem;
+}
+.technical-skills__list li {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  color: gray;
+}
+
+@media screen and (max-width: 800px) {
+  .technical-skills__list li {
+    padding: 5px;
+  }
+}
+.my-projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.my-projects-list__project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  margin: 40px 60px;
+}
+.my-projects-list__project p {
+  color: gray;
+  text-align: center;
+  margin-top: 0;
+}
+.my-projects-list__project__code-preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.my-projects-list__project__code-preview div {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .my-projects-list {
+    grid-template-columns: 1fr;
+  }
+  .my-projects-list__project {
+    margin: 10px 40px;
+  }
+}
+h2, h3, h5 {
+  text-align: center;
+}
+
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+hr {
+  width: 50%;
+  background-color: lightblue;
+  height: 0.7rem;
+  border-style: none;
+}
+
+.more-about-me-section {
+  display: flex;
+  align-items: center;
+}
+.more-about-me-section__text {
+  padding: 2rem;
+}
+.more-about-me-section__pic {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .more-about-me-section {
+    flex-direction: column;
+  }
+}
+.footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+.footer__connect-details {
+  margin-right: 1rem;
+}
+.footer__connect-details__icon {
+  color: slategray;
+  font-size: 2rem;
+}
+.footer__copyright {
+  color: slategray;
+  font-size: 1rem;
+  margin-left: 1rem;
+}/*# sourceMappingURL=styles.css.map */

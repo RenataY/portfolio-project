@@ -10,58 +10,64 @@
     
 </head>
 <body>
-    <header>
-        <div class="name">Rinata Yakobov</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#technical-skills">Technical Skills</a>
-            <a href="#my-projects">Projects</a>
-            <a href="#">Get in Touch</a>
-            
+    <header class="header">
+        <div class="header__name">Rinata Yakobov</div>
+        <nav class="header__nav">
+            <a class="header__nav__link" href="#more-about-me-section">About</a>
+            <a class="header__nav__link" href="#technical-skills">Technical Skills</a>
+            <a class="header__nav__link" href="#my-projects">Projects</a>
+            <a class="header__nav__link" href="mailto: rinat.yuri@gmail.com">Get in Touch</a>
+                
         </nav> 
     </header>    
 
     <main>
+        <hr>
         <section class="about" id="about">
-            <img class="img-about" src="../images/me.jpg">
-            <div class="text-about-me">
+            <div class="about__img">
+                <img src="../images/me.jpg">
+            </div>            
+            <div class="about__text">    
                 <p>Hey, I'm Rinata </p>
                 <p>I have been working in Deutsche Bank for pretty long time. My background is in the Project Management, Analisys and the Scrum Mastery. I'm part of the Tech Accelerator training program to become hands on Software Engineer !  </p>
-            </div>            
-            
+            </div>          
         </section>
+        
+        <h2>Technical Skills</h2>
+        <hr>
         <section class="technical-skills" id="technical-skills">
-            <h2>Technical Skills</h2>
             <p>I have been working on my technical skills for the last couple of weeks. Please refer to the list of the skills below with a big grain of salt.</p>
-            <ul class="technical-skills-list">
+            <ul class="technical-skills__list">
                 <li>
                     GIT
-                    <i class="fa-brands fa-github icon"></i>                    
+                    <i class="technical-skills__list__icon fa-brands fa-github icon"></i>                    
                 </li>
                 <li>
                     HTML
-                    <i class="fa-brands fa-html5 icon"></i>                    
+                    <i class="technical-skills__list__icon fa-brands fa-html5 icon"></i>                    
                 </li>
                 <li>
                     CSS
-                    <i class="fa-brands fa-css3-alt icon"></i>                    
+                    <i class="technical-skills__list__icon fa-brands fa-css3-alt icon"></i>                    
                 </li>
                 <li>
                     Javascript
-                    <i class="fa-brands fa-js icon"></i>         
-                    
+                    <i class="technical-skills__list__icon fa-brands fa-js icon"></i>      
+                  
                 </li>                
             </ul>
         </section>
+
+        <h2>My Projects</h2>
+        <hr>
         <section id="my-projects">
-            <h2>My Projects</h2>
             <div class="my-projects-list">
-                <div class="project">
+                <div class="my-projects-list__project">
                     <h3>Client Project 1</h3>
                     <p>This is a quick summary for Client Project 1</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>REACT</h5>                
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                         <div>
                             <a href="#">Code</a> 
                             <i class="fa-solid fa-code"></i>
@@ -72,12 +78,12 @@
                         </div>                      
                     </nav>
                 </div>    
-                <div class="project">   
+                <div class="my-projects-list__project">   
                     <h3>Client Project 2</h3>
                     <p>This is a quick summary for Client Project 2</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>JAVA, HTML</h5>                 
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                         <div>
                             <a href="#">Code</a> 
                             <i class="fa-solid fa-code"></i>
@@ -88,12 +94,12 @@
                         </div>                
                     </nav>
                 </div>
-                <div class="project">
+                <div class="my-projects-list__project">
                     <h3>Client Project 3</h3>
                     <p>This is a quick summary for Client Project 3</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>JAVA, HTML</h5>                    
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                         <div>
                             <a href="#">Code</a> 
                             <i class="fa-solid fa-code"></i>
@@ -104,12 +110,12 @@
                         </div>                    
                     </nav>
                 </div>
-                <div class="project">
+                <div class="my-projects-list__project">
                     <h3>Client Project 4</h3>
                     <p>This is a quick summary for Client Project 4</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>REACT</h5>                    
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                         <div>
                             <a href="#">Code</a> 
                             <i class="fa-solid fa-code"></i>
@@ -120,12 +126,12 @@
                         </div>                    
                     </nav>
                 </div>    
-                <div class="project">   
+                <div class="my-projects-list__project">   
                     <h3>Client Project 5</h3>
                     <p>This is a quick summary for Client Project 5</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>JAVA, HTML</h5>                  
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                         <div>
                             <a href="#">Code</a> 
                             <i class="fa-solid fa-code"></i>
@@ -136,12 +142,12 @@
                         </div>                       
                     </nav>
                 </div>
-                <div class="project">
+                <div class="my-projects-list__project">
                     <h3>Client Project 6</h3>
                     <p>This is a quick summary for Client Project 6</p>
                     <img src= "https://unsplash.it/100/100" />
                     <h5>JAVA, HTML</h5>                    
-                    <nav class="code-preview">                        
+                    <nav class="my-projects-list__project__code-preview">                        
                             <div>
                                 <a href="#">Code</a> 
                                 <i class="fa-solid fa-code"></i>
@@ -153,23 +159,39 @@
                                                    
                     </nav>
                 </div>
-            </div> 
+            </div>     
+
+        </section>      
+
+        <br><br>
+        <h2>About Me</h2>
+        <hr>
+        <section class="more-about-me-section" id="more-about-me-section">
+            <div class="more-about-me-section__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, debitis. In saepe incidunt eos, facilis, ea necessitatibus culpa veniam, quae veritatis doloremque accusantium aperiam tenetur perferendis! Et quibusdam molestias voluptate.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, debitis. In saepe incidunt eos, facilis, ea necessitatibus culpa veniam, quae veritatis doloremque accusantium aperiam tenetur perferendis! Et quibusdam molestias voluptate.          
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, debitis. In saepe incidunt eos, facilis, ea necessitatibus culpa veniam, quae veritatis doloremque accusantium aperiam tenetur perferendis! Et quibusdam molestias voluptate.          
+                </p>
+            </div>
+            <div class="more-about-me-section__pic">
+                <img src="./images/female-programmer-avatar.jfif" alt="female-software-engineer">
+            </div>
             
-
-        </section>
-
+        </section>      
     </main>
-    <footer>
-        <div class="copyright">
+
+    <footer class="footer">
+        <div class="footer__copyright">
             <p>
                 <i class="fa-regular fa-copyright"></i> RY 2022
             </p>    
         </div>
-        <div class="connect-details">
+        <div class="footer__connect-details">
             <p>
-                <a href="https://www.linkedin.com/in/rinata-yakobov-872b316"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/RenataY/"><i class="fa-brands fa-github"></i></i></a>
-                <a href="mailto: rinat.yuri@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/rinata-yakobov-872b316"><i class="footer__connect-details__icon fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/RenataY/"><i class="footer__connect-details__icon fa-brands fa-github"></i></a>
+                <a href="mailto: rinat.yuri@gmail.com"><i class="footer__connect-details__icon fa-solid fa-envelope"></i></a>
             </p>
         </div>
         
